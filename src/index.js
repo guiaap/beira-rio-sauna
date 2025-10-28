@@ -1,3 +1,19 @@
+window.addEventListener("scroll", () => {
+
+    const header = document.querySelector("header");
+    const logo = document.getElementById("logo");
+
+    if(window.scrollY > 50 && window.innerWidth > 660) {
+        header.style.backgroundColor = "var(--marrom-escuro)";
+        logo.setAttribute("src", "src/imagens/favicon.png");
+        logo.style.height = "6rem";
+    } else if(window.scrollY < 50 && window.innerWidth > 660) {
+        header.style.backgroundColor = "transparent";
+        logo.setAttribute("src", "src/imagens/logo.png");
+        logo.style.height = "10rem";
+    }
+});
+
 const mobileMenuButton = document.getElementById("mobile-menu-button");
 
 mobileMenuButton.addEventListener("click", () => {

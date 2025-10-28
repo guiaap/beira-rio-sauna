@@ -9,39 +9,136 @@
 </head>
 <body>
     <header >
-        <nav id="nav-bar" class="container">
-            <a href="index.html">
-                <img id="logo" src="src/imagens/logo.png" alt="Logo da Beira Rio Sauna Iate Clube">
-            </a>
-
-            <ul id="nav-list">
-                <li class="nav-item"><a href="#home" class="nav-link">Início</a></li>
-                <li class="nav-item"><a href="#about" class="nav-link">Sobre</a></li>
-                <li class="nav-item"><a href="#location" class="nav-link">Localização</a></li>
-                <li class="nav-item"><a href="#contact" class="nav-link">Contato</a></li>
-            </ul>
-
-            <button id="mobile-menu-button" aria-label="Abrir menu" >
-                <img src="src/imagens/menu.png" id="mobile-menu-icon">
-            </button>
-        </nav>
+        <div class="container">
+            <nav id="nav-bar">
+                <a href="index.html">
+                    <img id="logo" src="src/imagens/logo.png" alt="Logo da Beira Rio Sauna">
+                    <img id="mobile-logo" src="src/imagens/favicon.png" alt="Logo da Beira Rio Sauna">
+                </a>
+                <ul id="nav-list">
+                    <li class="nav-item"><a class="nav-link" href="#home">Início</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">Sobre</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#location">Localização</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contato</a></li>
+                </ul>
+                <button id="mobile-menu-button" aria-label="Abrir menu">
+                    <img src="src/imagens/menu.png" id="mobile-menu-icon">
+                </button>
+            </nav>
+        </div>
     </header>
 
     <main>
         <section id="home">
-                <div class="container">
-                    <div id="home-content">
-                        <h1>Relaxe às margens do rio. <br> Viva momentos de puro bem-estar.</h1>
-                        <p>Sauna seca e úmida, piscina, área de churrasco e drinks incríveis — tudo isso em um ambiente tranquilo e acolhedor, no coração do bairro Iate Clube, em Balneário Camboriú.</p>
+            <div class="container">
+                <div id="home-content-container">
+                    <h1>Relaxe às margens do rio. <br> Viva momentos de puro bem-estar.</h1>
+                    <p>Sauna seca e úmida, piscina, área de churrasco e drinks incríveis — tudo isso em um ambiente tranquilo e acolhedor, no coração do bairro Iate Clube, em Balneário Camboriú.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="about">
+            <div class="container">
+                <div id="about-content-container">
+                    <div id="about-image-container">
+                        <img src="src/imagens/piscina.jpg" alt="Imagem do interior da Beira Rio Sauna">
+                    </div>
+                    <div id="about-text-container">
+                        <h2 class="section-title">Sobre Nós</h2>
+                        <div class="title-bar"></div>
+                        <p>Ambiente privativo e acolhedor, ideal para quem busca relaxar e recarregar as energias. Nosso espaço conta com sauna seca e sauna úmida, ambas totalmente equipadas para oferecer conforto e bem-estar em qualquer momento do seu descanso.</p>
+                        <p>Dispomos ainda de serviço de bar e alimentação, com cardápio disponível conforme programação do dia.Também oferecemos espaço exclusivo para eventos pré-agendados, perfeito para momentos de lazer, confraternizações ou encontros recreativos.</p>
+                        <p>Localizado em uma área de fácil acesso e total discrição, nosso ambiente foi planejado para proporcionar conforto, tranquilidade e privacidade em todos os detalhes.</p>
+                        <span class="effect-phrase">Agende seu momento de relaxamento conosco e viva uma experiência única de bem-estar.</span>
                     </div>
                 </div>
+            </div>
         </section>
-        
+
+        <section id="location">
+            <div class="container">
+                <div id="location-content-container">
+                    <h2 class="section-title">Venha nos visitar !</h2>
+                    <div class="title-bar"></div>
+                    <p id="location-address">Endereço: Rua Aurora, 1580 - Bairro Iate Clube, Balneário Camboriú/SC - CEP: 88337-225</p>
+                    <div id="map-container">
+                        <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3554.456594904655!2d-48.633785499999995!3d-27.015734400000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94d8b6796ed9ad1b%3A0xc5c44751f5682dd2!2sClube%20Beira%20Rio!5e0!3m2!1spt-BR!2sbr!4v1761246033561!5m2!1spt-BR!2sbr"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                    <hr>
+                </div>
+            </div>
+            <div id="hours-container">
+                <h2>Horário de Funcionamento</h2>
+                <ul id="hours-list">
+                    <li class="hours-item">Segunda a sexta-feira: 14h às 21h</li>
+                    <li class="hours-item">Sábado: 14h às 20h</li>
+                    <li class="hours-item">Domingo: Fechado</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="contact">
+            <div class="container">
+                <div id="contact-content-container">
+                    <div id="form-container">
+                        <form action="">
+                            <h2>Entre em contato</h2>
+                            <hr>
+                            <label for="name">Nome:</label>
+                            <input type="text" name="name" id="name">
+                            <label for="email">Email:</label>
+                            <input type="email" name="email" id="email">
+                            <label for="message">Mensagem:</label>
+                            <textarea name="message" id="message"></textarea>
+                            <input type="submit" value="Enviar">
+                        </form>
+                    </div>
+                    <address>
+                        <div id="address-content-container">
+                            <h2>Siga-nos:</h2>
+                            <hr>
+                            <ul id="social-media-list">
+                                <li class="social-media-item">
+                                    <a href="" aria-label="Ir para o Instagram">
+                                        <img class="social-media-icon" src="src/imagens/instagram.png">
+                                        @beirariosauna
+                                    </a>
+                                </li>
+                            </ul>
+                            <h3>Outras formas de contato:</h3>
+                            <ul id="other-contacts-list">
+                                <li class="other-contacts-item">
+                                    <img class="other-contacts-icon" src="src/imagens/email.png" alt="ícone de e-mail">
+                                    Email: beirariosauna@gmail.com
+                                </li>
+                                <li class="other-contacts-item">
+                                    <img class="other-contacts-icon" src="src/imagens/phone.png" alt="ícone de e-mail">
+                                    Telefone fixo: (47) 3368-6492
+                                </li>
+                            </ul>
+                            <a id="other-contacts-whatsapp" href="" aria-label="Ir para o WhatsApp">
+                                <img id="whatsapp-icon" src="src/imagens/whatsapp-icon.png">
+                                WhatsApp
+                            </a>
+                         </div>
+                    </address>
+                </div>
+            </div>
+        </section>
     </main>
 
     <footer>
-
+        <hr>
+        <div id="footer-content">
+            <p>© Copyright 2025 Beira Rio Sauna - Todos os direitos reservados</p>
+            <a href="">Site desenvolvido por G. Amaral</a>
+        </div>
     </footer>
+
+    <a href="" id="whatsapp-button">
+        <img src="src/imagens/whatsapp.png" alt="Ir para o WhatsApp">
+    </a>
 
     <script src="src/index.js"></script>
 </body>
