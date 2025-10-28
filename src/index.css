@@ -716,6 +716,10 @@ address h3 {
         gap: 30px;
     }
 
+    #contact-content-container h2 {
+        font-size: 25px;
+    }
+
     #form-container {
         width: 100%;
     }
