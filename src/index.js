@@ -6,7 +6,7 @@ window.addEventListener("scroll", () => {
     if(window.scrollY > 50 && window.innerWidth > 800) {
         header.style.backgroundColor = "var(--marrom-escuro)";
         logo.setAttribute("src", "src/imagens/favicon.png");
-        logo.style.height = "60px";
+        logo.style.height = "50px";
     } else if(window.scrollY < 50 && window.innerWidth > 800) {
         header.style.backgroundColor = "transparent";
         logo.setAttribute("src", "src/imagens/logo.png");
@@ -44,4 +44,16 @@ mobileMenuButton.addEventListener("click", () => {
 
 });
 
+const observers = document.querySelectorAll('.fade-up, .fade-left, .fade-right, .fade-delay');
+
+const observer = new IntersectionObserver((entries, obs) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('visible');
+      obs.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.2 });
+
+observers.forEach(el => observer.observe(el));
 
