@@ -4,11 +4,11 @@ window.addEventListener("scroll", () => {
     const logo = document.getElementById("logo");
 
     if(window.scrollY > 50 && window.innerWidth > 800) {
-        header.style.backgroundColor = "var(--marrom-escuro)";
+        header.style.backgroundImage = "linear-gradient(180deg, var(--marrom-escuro) 80%, var(--marrom-amadeirado))";
         logo.setAttribute("src", "src/imagens/favicon.png");
         logo.style.height = "50px";
     } else if(window.scrollY < 50 && window.innerWidth > 800) {
-        header.style.backgroundColor = "transparent";
+        header.style.backgroundImage = "none";
         logo.setAttribute("src", "src/imagens/logo.png");
         logo.style.height = "100px";
     }
